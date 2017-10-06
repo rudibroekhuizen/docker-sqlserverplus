@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  db:
+    image: microsoft/mssql-server-linux
+    restart: always
+    environment:
+      ACCEPT_EULA: Y
+      SA_PASSWORD: Strong!Password
+      TZ: "Europe/Amsterdam"
+    ports:
+      - "1433:1433"
