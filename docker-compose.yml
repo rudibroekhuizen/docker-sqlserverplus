@@ -1,7 +1,7 @@
 version: '2'
 
 services:
-  sqlserver:
+  db:
     image: microsoft/mssql-server-linux:2017-latest
     restart: always
     environment:
