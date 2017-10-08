@@ -1,0 +1,1 @@
+language, country, city, actor, category, film, inventory, film_actor, film_category, customer, rental, payment 
