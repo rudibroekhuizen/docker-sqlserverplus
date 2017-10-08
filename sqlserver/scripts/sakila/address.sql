@@ -1,3 +1,5 @@
+ALTER TABLE address NOCHECK CONSTRAINT fk_address_city;  
+
 SET IDENTITY_INSERT address ON
 
 Insert into address
@@ -3017,3 +3019,5 @@ Values
 ;
 SET IDENTITY_INSERT address OFF
 
+
+ALTER TABLE address CHECK CONSTRAINT fk_address_city;  
