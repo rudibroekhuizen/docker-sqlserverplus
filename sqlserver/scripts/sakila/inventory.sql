@@ -1,3 +1,5 @@
+ALTER TABLE inventory NOCHECK CONSTRAINT fk_inventory_store;
+
 SET IDENTITY_INSERT inventory ON
 
 Insert into inventory
@@ -22906,3 +22908,5 @@ Values
 ('4581','1000','2','2006-02-15T05:09:17.000')
 ;
 SET IDENTITY_INSERT inventory OFF
+
+ALTER TABLE inventory CHECK CONSTRAINT fk_inventory_store;

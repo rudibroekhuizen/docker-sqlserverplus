@@ -1,3 +1,5 @@
+ALTER TABLE rental NOCHECK CONSTRAINT fk_rental_staff;
+
 SET IDENTITY_INSERT rental ON
 
 Insert into rental
@@ -80222,3 +80224,6 @@ Values
 ;
 
 SET IDENTITY_INSERT rental OFF
+
+ALTER TABLE rental CHECK CONSTRAINT fk_rental_staff;
+

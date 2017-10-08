@@ -1,3 +1,6 @@
+ALTER TABLE payment NOCHECK CONSTRAINT fk_payment_rental;
+ALTER TABLE payment NOCHECK CONSTRAINT fk_payment_staff;
+
 SET IDENTITY_INSERT payment ON
 
 Insert into payment
@@ -80246,8 +80249,7 @@ Values
 ('16049','599','2','15725','2.99','2005-08-23T11:25:00.000','2006-02-15T22:24:13.000')
 ;
 
--- End of Script
---
---
-
 SET IDENTITY_INSERT payment OFF
+
+ALTER TABLE payment CHECK CONSTRAINT fk_payment_rental;
+ALTER TABLE payment CHECK CONSTRAINT fk_payment_staff;

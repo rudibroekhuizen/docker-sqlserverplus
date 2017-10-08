@@ -1,3 +1,5 @@
+ALTER TABLE city NOCHECK CONSTRAINT fk_city_country;
+
 SET IDENTITY_INSERT city ON
 
 Insert into city
@@ -3002,3 +3004,5 @@ Values
 ;
 SET IDENTITY_INSERT city OFF
 
+
+ALTER TABLE city CHECK CONSTRAINT fk_city_country;

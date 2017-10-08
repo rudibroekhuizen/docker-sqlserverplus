@@ -1,3 +1,5 @@
+ALTER TABLE customer NOCHECK CONSTRAINT fk_customer_store;
+
 SET IDENTITY_INSERT customer ON
 
 Insert into customer
@@ -2997,3 +2999,6 @@ Values
 ;
 
 SET IDENTITY_INSERT customer OFF
+
+ALTER TABLE customer CHECK CONSTRAINT fk_customer_store;
+
