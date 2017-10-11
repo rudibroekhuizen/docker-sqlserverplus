@@ -18,7 +18,7 @@ qs.last_execution_time
 FROM sys.dm_exec_query_stats qs 
 CROSS APPLY sys.dm_exec_sql_text(qs.sql_handle) qt 
 CROSS APPLY sys.dm_exec_query_plan(qs.plan_handle) qp 
-ORDER BY qs.total_logical_reads DESC -- logical reads 
+-- ORDER BY qs.total_logical_reads DESC -- logical reads 
 -- ORDER BY qs.total_logical_writes DESC -- logical writes 
 -- ORDER BY qs.total_worker_time DESC -- CPU time 
 FOR JSON AUTO;
