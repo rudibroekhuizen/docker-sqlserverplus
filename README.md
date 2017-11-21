@@ -2,10 +2,11 @@
 
 
 ## Connect into container
-docker exec -it dockersqlserverplus_db_1 sh 
+```bash
+docker-compose exec sqlserver bash
+```
 
 ## Sqlcmd in container
-
 ```bash
 /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P 'Strong!Password'
 ```
