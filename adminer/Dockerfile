@@ -1,6 +1,5 @@
 # https://raw.githubusercontent.com/soedomoto/sqlsrv-php-oauth2-server/master/adminer-sqlsrv/Dockerfile
 
-
 FROM php:7.0
 
 RUN apt update && apt install -y apt-transport-https git
