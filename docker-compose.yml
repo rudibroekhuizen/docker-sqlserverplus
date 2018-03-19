@@ -2,7 +2,7 @@ version: '3'
 
 services:
   sqlserver:
-    build: ./
+    build: ./sqlserver
     environment:
       ACCEPT_EULA: Y
       SA_PASSWORD: Strong!Password
