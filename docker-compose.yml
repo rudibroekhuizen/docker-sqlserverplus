@@ -1,9 +1,13 @@
-version: '2'
+version: '3'
 
 services:
   sqlserver:
-    extends:
-      file: ./sqlserver/docker-compose.yml
-      service: sqlserver
+    build: ./
+    environment:
+      ACCEPT_EULA: Y
+      SA_PASSWORD: Strong!Password
+      TZ: "Europe/Amsterdam"
+    ports:
+      - "1433:1433"
     volumes:
       - ./sqlserver/scripts:/scripts
