@@ -11,3 +11,11 @@ services:
       - "1433:1433"
     volumes:
       - ./sqlserver/scripts:/scripts
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+    environment:
+      ADMINER_PLUGINS: 'tables-filter tinymce'
