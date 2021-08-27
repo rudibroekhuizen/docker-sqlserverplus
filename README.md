@@ -11,7 +11,7 @@ docker-compose exec sqlserver bash
 sqlcmd -S localhost -U SA -P 'Strong(!)Password'
 ```
 
-## Import Sakila database
+## Create Sakila database
 ```bash
 wget -P /tmp https://raw.githubusercontent.com/jOOQ/sakila/main/sql-server-sakila-db/sql-server-sakila-schema.sql
 ```
