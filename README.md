@@ -24,5 +24,5 @@ sqlcmd -S localhost -U SA -P 'Strong(!)Password' -i /tmp/sql-server-sakila-schem
 wget -P /tmp https://raw.githubusercontent.com/jOOQ/sakila/main/sql-server-sakila-db/sql-server-sakila-insert-data.sql
 ```
 ```bash
-sqlcmd -S localhost -U SA -P 'Strong(!)Password' -i /tmp/sql-server-sakila-insert-data.sql
+sqlcmd -S localhost -U SA -P 'Strong(!)Password' -d sakila -i /tmp/sql-server-sakila-insert-data.sql
 ```
