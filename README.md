@@ -19,8 +19,10 @@ wget -P /tmp https://raw.githubusercontent.com/jOOQ/sakila/main/sql-server-sakil
 sqlcmd -S localhost -U SA -P 'Strong(!)Password' -i /tmp/sql-server-sakila-schema.sql
 ```
 
-## Import data
+## Insert data
 ```bash
-cd /scripts/sakila
-sqlcmd -S localhost -U SA -P 'Strong(!)Password' -d sakila -i *.sql
+wget -P /tmp https://raw.githubusercontent.com/jOOQ/sakila/main/sql-server-sakila-db/sql-server-sakila-insert-data.sql
+```
+```bash
+sqlcmd -S localhost -U SA -P 'Strong(!)Password' -i /tmp/sql-server-sakila-insert-data.sql
 ```
